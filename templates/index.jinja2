@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="">
+<head>
+  <title>Test application</title>
+  {{ stylesheet_tag('app_css') | safe }}
+</head>
+<body>
+  <p id="hello">Hello (without javascript)</p>
+
+  {{ javascript_tag('app_js') | safe }}
+</body>
+</html>

@@ -87,3 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# because we are using webpack
+# don't include 
+node_modules
