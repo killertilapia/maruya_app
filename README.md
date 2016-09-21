@@ -1,2 +1,2 @@
 # maruya_app
-Flask based app with Firebase backed for getting Maruya
+Flask based app with Firebase backend for getting Maruya
