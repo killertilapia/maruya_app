@@ -1,5 +1,7 @@
 {
   "name": "maruya-app",
+  "version": "0.6.66",
+  "license": "MIT",
   "author": {
     "name": "Jaypax Ginete",
     "email": "killer.tilapia@gmail.com"
@@ -9,15 +11,18 @@
     "build": "node_modules/.bin/webpack --progress --profile --colors"
   },
   "dependencies": {
-    "script-loader": "^0.6.1",
     "css-loader": "^0.14.4",
-    "style-loader": "^0.12.3",
-    "image-webpack-loader": "^1.4.0",
     "extract-text-webpack-plugin": "^0.8.1",
-    "manifest-revision-webpack-plugin": "^0.0.5",
-    "webpack": "^1.9.10",
-    "webpack-dev-server": "^1.9.0",
+    "image-webpack-loader": "^1.4.0",
+    "jquery": "^3.1.0",
     "less": "^2.7.1",
-    "less-loader": "^2.2.3"
+    "less-loader": "^2.2.3",
+    "manifest-revision-webpack-plugin": "^0.0.5",
+    "script-loader": "^0.6.1",
+    "style-loader": "^0.12.3",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "webpack": "^1.9.10",
+    "webpack-dev-server": "^1.9.0"
   }
 }

@@ -9,7 +9,8 @@ var lessLoader = ExtractTextPlugin.extract("css?sourceMap!less?sourceMap");
 module.exports = {
     entry: {
         app_js: [
-            rootAssetPath + '/scripts/entry.js'
+            //rootAssetPath + '/scripts/entry.js'   // replace with typescript
+            rootAssetPath + '/scripts/app_main.ts'
         ],
         app_css: [
             rootAssetPath + '/styles/main.less'
@@ -22,7 +23,7 @@ module.exports = {
         chunkFilename: '[id].[chunkhash].js'
     },
     resolve: {
-        extensions: ['', '.js','.less']
+        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js', '.css', '.less']
     },
     module: {
         loaders: [
@@ -31,6 +32,10 @@ module.exports = {
                 loader: lessLoader,
                 exclude: /node_modules/
             },            
+            {
+                test: /\.ts$/, 
+                loader: 'ts-loader'
+            },
             {
                 test: /\.js$/i, 
                 loader: 'script-loader',
