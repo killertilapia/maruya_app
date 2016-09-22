@@ -6,6 +6,7 @@
     },
     "files": [
         "assets/scripts/app_main.ts",
+        "typings/globals/bootstrap/index.d.ts",
         "typings/index.d.ts"
     ]
 }

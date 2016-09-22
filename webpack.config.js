@@ -4,8 +4,6 @@ var ManifestRevisionPlugin = require('manifest-revision-webpack-plugin');
 
 var rootAssetPath = './assets';
 
-var lessLoader = ExtractTextPlugin.extract("css?sourceMap!less?sourceMap");
-
 module.exports = {
     entry: {
         app_js: [
@@ -28,25 +26,23 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.less$/, 
-                loader: lessLoader,
-                exclude: /node_modules/
-            },            
-            {
-                test: /\.ts$/, 
+                test: /\.ts$/,
                 loader: 'ts-loader'
             },
             {
-                test: /\.js$/i, 
+                test: /\.less$/,
+                loader: ExtractTextPlugin.extract('css?sourceMap!' + 'less?sourceMap'),
+                exclude: /node_modules/
+            },
+            {
+                test: /\.js$/i,
                 loader: 'script-loader',
                 exclude: /node_modules/
             },
-            /*
             {
                 test: /\.css$/i,
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
             },
-            */
             {
                 test: /\.(jpe?g|png|gif|svg([\?]?.*))$/i,
                 exclude: /node_modules/,
@@ -54,6 +50,10 @@ module.exports = {
                     'file?context=' + rootAssetPath + '&name=[path][name].[hash].[ext]',
                     'image?bypassOnDebug&optimizationLevel=7&interlaced=false'
                 ]
+            },
+            { 
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+                loader: 'url-loader?limit=100000' 
             }
         ]
     },
