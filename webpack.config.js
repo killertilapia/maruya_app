@@ -7,8 +7,7 @@ var rootAssetPath = './assets';
 module.exports = {
     entry: {
         app_js: [
-            //rootAssetPath + '/scripts/entry.js'   // replace with typescript
-            rootAssetPath + '/scripts/app_main.ts'
+            './app/app_main.ts'
         ],
         app_css: [
             rootAssetPath + '/styles/main.less'

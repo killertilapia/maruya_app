@@ -7,10 +7,27 @@
     "email": "killer.tilapia@gmail.com"
   },
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --progress --colors --port 2992 --content-base build/public",
-    "build": "node_modules/.bin/webpack --progress --profile --colors"
+    "start": "node_modules\\.bin\\webpack-dev-server --progress --colors --port 2992 --content-base build\\public",
+    "build": "node_modules\\.bin\\webpack --progress --profile --colors"
   },
   "dependencies": {
+    "@angular/common": "~2.0.1",
+    "@angular/compiler": "~2.0.1",
+    "@angular/core": "~2.0.1",
+    "@angular/forms": "~2.0.1",
+    "@angular/http": "~2.0.1",
+    "@angular/platform-browser": "~2.0.1",
+    "@angular/platform-browser-dynamic": "~2.0.1",
+    "@angular/router": "~3.0.1",
+    "@angular/upgrade": "~2.0.1",
+
+    "angular-in-memory-web-api": "~0.1.1",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25",
+
     "bootstrap": "^3.3.7",
     "css-loader": "^0.14.4",
     "extract-text-webpack-plugin": "^0.8.1",
@@ -23,9 +40,14 @@
     "script-loader": "^0.6.1",
     "style-loader": "^0.12.3",
     "ts-loader": "^0.8.2",
-    "typescript": "^1.8.10",
     "url-loader": "^0.5.7",
     "webpack": "^1.9.10",
     "webpack-dev-server": "^1.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.0.3",
+    "typings":"^1.4.0"
   }
 }
