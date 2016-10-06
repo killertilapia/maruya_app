@@ -8,11 +8,11 @@ Flask based app with Firebase backend for getting Maruya
 2. Setup a virtualenv (don't be a dummy!)
 3. Python3
 
-###Install deps
+###Installation on Dev env
 
 1. Pip install -r requirements.txt
 2. npm install
-
+3. npm run typings install
 ....
 
 Profit!

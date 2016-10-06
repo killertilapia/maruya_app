@@ -7,7 +7,7 @@ var rootAssetPath = './assets';
 module.exports = {
     entry: {
         app_js: [
-            './app/app_main.ts'
+            './app/main.ts'
         ],
         app_css: [
             rootAssetPath + '/styles/main.less'

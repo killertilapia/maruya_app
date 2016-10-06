@@ -10,7 +10,7 @@
         "noImplicitAny": false
     },
     "files": [
-        "app/app_main.ts",
+        "app/main.ts",
         "typings/globals/bootstrap/index.d.ts",
         "typings/index.d.ts"
     ]
